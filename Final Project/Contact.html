@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="Author" content="Group A">
+	<title>Contact Us</title>
+	<link href="javajam.css" rel="stylesheet">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1 style="background-color: rgb(17, 145, 96);">Contact</h1>
+		</header>
+	</div>
+	
+	<nav><div>
+		<strong><a href="Home.html">Home</a>&nbsp; 
+            <a href="Donations.html">Donations </a>&nbsp; 
+            <a href="About.html">About Us </a>&nbsp; 
+            <a href="Contact-Us.html">Contact Us </a>&nbsp; 
+			<a href="login.html">Login</a>&nbsp;
+	</div></nav>
+<main>
+	<h2>Contact Us</h2>
+	<strong> Contact us by either giving us a phone call or either filling out the form below with the following requirements below. 
+	If you would like us to give you a call back later fill out the form below with you first name, last name, email, and a brief description. 
+	 </strong> 
+
+	<form name="feedback">
+		
+		<label for="First-name"> * First Name:</label> <input type="text" name="First-name" id="First-name" required>
+		<label for="Last-name"> * Last Name:</label> <input type="text" name="Last-name" id="Last-name" required>
+		<label for="E-Mail"> * E-mail:</label><input type="email" name="myE-mail" id="E-Mail" required>
+		<label for="Subject"> *Subject:</label> <input type="text" name="mySubject" id="Subject" required>
+		<label for="Description"> *Message:</label><textarea id="Description" name="Description" cols="21" rows="2" required></textarea>
+		
+		<input id="marginSubmitButton" type="submit" value="Submit Now" onclick="confirmClick()">
+		<script>
+			function confirmClick(){
+				var i;
+				for(i = 0; i < document.forms[0].length; i++) {
+					if(document.forms[0].elements[i].value == "") {
+						alert("Please enter value for all forms.");
+						return false;
+					}
+				}
+				alert("Thank you for filling out the form. Your feedback will be processed within 3-7 business days.");
+				return true;
+			}
+		</script>
+		
+	</form> 
+	
+	<strong> The bipartisan Relief Act of 2021 was signed into law on February 15, 2021, and includes more than $1 billion in tax relief and economic stimulus for struggling families and small businesses who are suffering as a result of the COVID-19 pandemic </br>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3085.911429603613!2d-76.53523978434227!3d39.33559217950544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8066c3fb3e391%3A0xe9992daaf6c3d8ce!2s5565%20Cedonia%20Ave%2C%20Baltimore%2C%20MD%2021206!5e0!3m2!1sen!2sus!4v1574295242142!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+	</main>
+	
+	<footer>
+		5555 Mountrush <br>MountRush, 21206<br>555-555-555
+		<br>copyright &copy; 2022 Covid Relief FUnd
+	</footer>
+</body>
+</html>
+
+	
